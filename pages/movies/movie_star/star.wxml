@@ -1,0 +1,10 @@
+<template name="movieStar">
+  <view class="movie-star">
+    <view class="stars">
+      <block wx:for="{{stars}}" wx:for-item="starSrc" wx:key="*this">
+        <image src="{{starSrc}}"></image>
+      </block>
+    </view>
+    <text class="score">{{average}}</text>
+  </view>
+</template>

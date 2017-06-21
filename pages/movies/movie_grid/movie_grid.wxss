@@ -1,0 +1,10 @@
+@import "../movie_item/movie_item.wxss";
+
+.movie-grid {
+  padding-bottom: 20rpx;
+}
+
+.movie-item {
+  padding: 0;
+  margin: 37rpx 0 0 37rpx;
+}

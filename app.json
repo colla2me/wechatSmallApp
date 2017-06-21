@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/movies/movie",
+    "pages/posts/posts",
+    "pages/posts/post-detail/detail",
+    "pages/welcome/welcome",
+    "pages/movies/more_movie/more_movie",
+    "pages/movies/movie_detail/movie_detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#405f80",
+    "navigationBarTitleText": "文与字",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/movies/movie",
+        "text": "電影",
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "images/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "閲讀",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
+      }
+    ]
+  }
+}

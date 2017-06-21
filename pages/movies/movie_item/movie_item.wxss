@@ -1,0 +1,23 @@
+@import "../movie_star/star.wxss";
+
+.movie-item {
+  display: inline-block;
+  padding: 0 22rpx 20rpx;
+  font-size: 0;
+}
+
+.movie-cover {
+  width: 200rpx;
+  height: 270rpx;
+  margin-bottom: 20rpx;
+}
+
+.movie-title {
+  width: 200rpx;
+  margin-bottom: 16rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #666;
+}

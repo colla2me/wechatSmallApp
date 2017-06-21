@@ -1,0 +1,26 @@
+<!--detail.wxml-->
+<view class="container">
+  <image class="head-image" src="{{isPlayingMusic?detail.music.coverImg:detail.headImgSrc}}"></image>
+  <image catchtap="onAudioTap" class="audio" src="{{isPlayingMusic? '/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>
+  <view class="article">
+    <view class="profile">
+      <image class="avatar" src="{{detail.avatar}}"></image>
+      <text class="author">{{detail.author}}</text>
+      <text class="const-text">发表于</text>
+      <text class="date">{{detail.dateTime}}</text>
+    </view>
+    <view class="title">
+      <text>{{detail.title}}</text>
+    </view>
+    <view class="tool">
+      <view class="tool-img">
+        <image catchtap="onCollectTap" src="{{isCollected?'/images/icon/collection.png':'/images/icon/collection-anti.png'}}"></image>
+        <image catchtap="onShareTap" class="share-icon" src="/images/icon/share.png"></image>
+      </view>
+      <view class="hr"></view>
+    </view>
+    <view class="content">
+      <text>{{detail.detail}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+@import "../movie_item/movie_item.wxss";
+
+.movie-section {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.movie-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.movie-more {
+  color: #1f4ba5;
+}
+
+.more-img {
+  width: 9rpx;
+  height: 16rpx;
+  margin-left: 10rpx;
+}
+
+.scroll-view_H {
+  white-space: nowrap;
+}

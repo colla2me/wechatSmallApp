@@ -1,0 +1,24 @@
+
+.movie-star {
+  /*display: flex;
+  flex-direction: row;*/
+  line-height: 24rpx;
+}
+
+.stars {
+  display: inline-block;
+  font-size: 0;
+  height: 17rpx;
+  margin-right: 24rpx;
+}
+
+.stars image {
+  width: 17rpx;
+  height: 17rpx;
+  padding-left: 4rpx;
+}
+
+.score {
+  color: #1f3463;
+  font-size: 24rpx;
+}

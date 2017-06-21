@@ -1,0 +1,8 @@
+<!--welcome.wxml-->
+<view class="container">
+　<image class="avatar" src="/images/avatar/1.png"></image>
+  <text class="name">Hello, 小程序</text>
+  <view class="moto" bindtap="onTap">
+		<text>点击进入</text>
+  </view>
+</view>

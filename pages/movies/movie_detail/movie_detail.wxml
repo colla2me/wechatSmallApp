@@ -1,0 +1,64 @@
+<!--movie_detail.wxml-->
+<import src="../movie_star/star.wxml" />
+
+<view class="container">
+  <image class="movie_cover" src="{{movie.movieImg}}" mode="aspectFill"></image>
+  <view class="cover_info">
+    <text class="title" class="title">{{movie.title}}</text>
+    <text class="year" class="year">{{movie.country + '·' + movie.year}}</text>
+    <view class="wish_comment">
+      <text class="wish">
+        <text class="count">{{movie.wishCount}}</text>人喜欢
+      </text>
+      <text class="comment">
+        <text class="count">{{movie.commentCount}}</text>条评论
+      </text>
+    </view>
+    <image class="small_img" src="{{movie.movieImg}}" mode="aspectFit" data-src="{{movie.movieImg}}" catchtap="viewMoviePostImg"></image>
+  </view>
+  <view class="summary">
+    <view class="movie_name">
+      <text>{{movie.title}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="dt">评分</text>
+      <template is="movieStar" data="{{average: movie.score, stars: movie.stars}}" />
+    </view>
+    <view class="flex-row">
+      <text class="dt">导演</text>
+      <text>{{movie.director.name}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="dt">演员</text>
+      <text class="dd">{{movie.casts}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="dt">类型</text>
+      <text class="dd">{{movie.genres}}</text>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="summary">
+    <view class="summary_title">
+      <text>剧情简介</text>
+    </view>
+    <view class="summary_text">
+      <text>{{movie.summary}}
+      </text>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="summary">
+    <view class="summary_title">
+      <text>演员阵容</text>
+    </view>
+    <scroll-view class="casting" scroll-x="true">
+      <block wx:for="{{movie.castsInfo}}" wx:for-item="cast" wx:key="{{cast.id}}">
+        <view class="cast_wrapper" data-src="{{cast.avatar}}" catchtap="viewCastingAvatar">
+          <image class="cast_img" src="{{cast.avatar}}" mode="aspectFill"></image>
+          <text class="cast_name">{{cast.name}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>
